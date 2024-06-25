@@ -22,12 +22,17 @@
   </modules>
 
   <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
-    </site>
-  </distributionManagement>
+    <repository>
+      <id>maven-releases</id>
+      <name>maven-releases</name>
+      <url>http://10.0.2.18:8081/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>maven-snapshots</id>
+      <name>maven-snapshots</name>
+      <url>http://10.0.2.18:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+</distributionManagement>
 
   <build>
     <plugins>
